@@ -1,0 +1,34 @@
+<HTML>
+<HEAD><TITLE>Retrieve Author Information</TITLE></HEAD>
+<BODY ALINK="yellow" VLINK="yellow" LINK="yellow">
+<FORM ACTION="/FINAL/MyJSP/AuthorInfo" METHOD="post" NAME="FrmAMInfo">
+<!-- insert the company banner -->
+<TABLE WIDTH="100%" BORDER="0" BGCOLOR="black">
+  <TR ALIGN="center">
+    <TD><FONT SIZE="7" COLOR="white">Author Information</FONT></TD>
+  </TR>
+</TABLE>
+
+<!-- tells the user what to input -->
+<CENTER>
+  <FONT SIZE="5" COLOR="black">
+    Enter Your Author ID And Select Info To View<P>
+  </FONT>
+</CENTER>
+
+<!-- the user inserts their id and selects what to view -->
+<TABLE WIDTH="100%">
+<TR ALIGN="center">
+  <TD>AuthorID:
+      <INPUT TYPE="text" NAME="id" VALUE="1" SIZE="10">
+  </TD>
+</TR>
+<TR><TD>&nbsp;</TD></TR> <!-- blank row -->
+<TR ALIGN="center">
+  <TD><INPUT TYPE="submit" NAME="btnSubmit" VALUE="Get Personal Information"></TD>
+</TR>
+</FORM>
+</TABLE>
+
+</BODY>
+</HTML>

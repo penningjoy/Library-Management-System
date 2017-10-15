@@ -1,0 +1,79 @@
+<HTML>
+	<HEAD>
+		<TITLE>User Registration</TITLE>
+	</HEAD>
+	<BODY BGCOLOR="black">
+	<!-- Initializing a form object, which will submit data captured on the form. -->
+		<FORM ACTION="/FINAL//MyJSP/Sign" METHOD="post" NAME="FrmUserRegistration">
+			<TABLE ALIGN="center" BGCOLOR="black" BORDER="0" CELLPADDING="0" CELLSPACING="0" NAME="tblOuter" WIDTH="50%">
+				<TR HEIGHT="300" VALIGN="top">
+					<TD ALIGN="center" BORDER="1" COLSPAN="10">
+					<BR>
+					<!-- First Child Table to hold the d/e Form objects, to Capture / Control data begins. -->
+					<!-- HTML code spec follows for designing the form fields First Name, Last Name, Email Address, User Name, Password and About Me and buttons such as Register and Reset. -->
+						<TABLE ALIGN="center" BORDER="1" BORDERCOLOR="black" CELLPADDING="2" CELLSPACING="0" NAME="tblFirstChild" WIDTH="100%">
+						<!-- First Child Table: First Row: Column to hold the Form Title . -->
+						<!-- Inserting table row to display the form title -->
+							<TR BGCOLOR="tan">
+								<TD ALIGN="left" COLSPAN="2">
+								<!-- Formatting the font of title -->
+									<FONT SIZE="2" COLOR="red"><B>User Registration</B></FONT>
+								</TD>
+							</TR>
+						<!-- First Child Table: Second, Third, Fourth & Fifth Rows: Two columns, first column to hold the label and the second to hold the data capture object that captures data. -->
+						<!-- Inserting table row that holds table data label and text box of First Name -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"> <FONT COLOR="tan">First Name:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<INPUT MAXLENGTH="35" NAME="FirstName" TYPE="text" SIZE="25">
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds table data label and text box of Last Name -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"><FONT COLOR="tan">Last Name:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<INPUT MAXLENGTH="35" NAME="LastName" TYPE="text" SIZE="25">
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds table data label and text box of Email Address -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"><FONT COLOR="tan">Email Address:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<INPUT MAXLENGTH="75" NAME="EmailAddress" TYPE="text" SIZE="35">
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds table data label and text box of User Name -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"><FONT COLOR="tan">User Name:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<INPUT MAXLENGTH="35" NAME="UserName" TYPE="text" SIZE="15">
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds table data label and text box of Password -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"><FONT COLOR="tan">Password:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<INPUT MAXLENGTH="35" NAME="Password" TYPE="password" SIZE="15">
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds table data checkboxes of About Me -->
+							<TR>
+								<TD ALIGN="right" WIDTH="25%"><FONT COLOR="tan">About Me:</FONT COLOR></TD>
+								<TD ALIGN="left">
+									<TEXTAREA NAME="AboutMe" COLS="35" ROWS="5"></TEXTAREA>
+								</TD>
+							</TR>
+						<!-- Inserting table row that holds inputs for Register and Reset buttons -->
+							<TR>
+								<TD COLSPAN="2" ALIGN="center">
+									<INPUT NAME="cmdSubmit" TYPE="submit" VALUE="Register">
+									<INPUT NAME="cmdReset" TYPE="reset" VALUE="Reset">
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</FORM>
+	</BODY>
+</HTML>

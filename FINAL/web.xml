@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+ 
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-Instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+
+	<servlet>
+		<servlet-name>Sign</servlet-name>
+		<display-name>Sign</display-name>
+		<jsp-file>Sign.jsp</jsp-file>
+	</servlet>
+
+<servlet-mapping>
+		<servlet-name>Sign</servlet-name>
+		<url-pattern>/MyJSP/Sign</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+      <servlet-name>AuthorInfo</servlet-name>
+      <jsp-file>AuthorInfo.jsp</jsp-file>
+  </servlet>
+
+<servlet-mapping>
+		<servlet-name>AuthorInfo</servlet-name>
+		<url-pattern>/MyJSP/AuthorInfo</url-pattern>
+	</servlet-mapping>
+
+  
+
+<servlet>
+		<servlet-name>BookMaster</servlet-name>
+		<display-name>BookMaster</display-name>
+		<servlet-class>BookMaster</servlet-class>
+	</servlet>
+
+ 	<servlet-mapping>
+		<servlet-name>BookMaster</servlet-name>
+		<url-pattern>/MyServlets/BookMaster</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>AuthorMaster</servlet-name>
+		<display-name>AuthorMaster</display-name>
+		<servlet-class>AuthorMaster</servlet-class>
+	</servlet>
+
+ 	<servlet-mapping>
+		<servlet-name>AuthorMaster</servlet-name>
+		<url-pattern>/MyServlets/AuthorMaster</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>MemberMaster</servlet-name>
+		<display-name>MemberMaster</display-name>
+		<servlet-class>MemberMaster</servlet-class>
+	</servlet>
+
+ 	<servlet-mapping>
+		<servlet-name>MemberMaster</servlet-name>
+		<url-pattern>/MyServlets/MemberMaster</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>PublisherMaster</servlet-name>
+		<display-name>PublisherMaster</display-name>
+		<servlet-class>PublisherMaster</servlet-class>
+	</servlet>
+
+ 	<servlet-mapping>
+		<servlet-name>PublisherMaster</servlet-name>
+		<url-pattern>/MyServlets/PublisherMaster</url-pattern>
+	</servlet-mapping>
+</web-app>
